@@ -2,13 +2,11 @@
 class Users {
 
     users() {
-        const users = cy.contains('Users')
-        users.click()
+        cy.newItem('Users')
     }
 
     addUsers() {
-        const newUser = cy.contains('Add')
-        newUser.click()
+    cy.add()
     }
 
     searchUsers() {
@@ -98,6 +96,23 @@ class Users {
         cy.contains('Grant').click()
     }
 
+    rolesButton(){
+        cy.contains('Roles').click()
+    }
+
+    assignRolesButton(){
+        cy.contains('Assign').click()
+    }
+
+    assignRoles(role){
+        cy.get('form').within(($form) => {
+            cy.get('.x-form-trigger').first().click()
+            
+            })
+            cy.get('.x-combo-list-item')
+            cy.get('[title=admin]').contains(role).click()
+    }
+
     grantPermission(permission){
         cy.get('form').within(($form) => {
             cy.get('.x-form-trigger').first().click()
@@ -107,9 +122,10 @@ class Users {
             cy.get('[role=listitem]').contains(permission).click()
     }
 
+    forwardableCheckBox(){
+        cy.get('input[type=checkbox]').check()
     }
-
-   
-
+  
+}
 
 export default Users

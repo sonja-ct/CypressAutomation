@@ -2,27 +2,30 @@
 class Devices {
 
     devices() {
-        const devices = cy.contains('Devices')
-        devices.click()
+      cy.newItem('Devices')
     }
 
     addDevices() {
-        const newDevice = cy.contains('Add')
-        newDevice.click()
+        cy.add('Add')
+
     }
 
     fillDisplayName(value) {
-        const field = cy.xpath("//div[@class=' x-form-field x-form-text  x-form-invalid']|//*[@name='displayName'][@style='width: 296px;']")
-        field.clear()
-        field.type(value)
-        return this
+        cy.get('form').within(($form) => {
+            const field = cy.get('[name=displayName]')
+            field.clear()
+            field.type(value)
+            return this
+        })
     }
 
     fillClientId(value) {
-        const field = cy.xpath("//div[@class=' x-form-field x-form-text  x-form-invalid']|//*[@name='clientID'][@style='width: 296px;']")
-        field.clear()
-        field.type(value)
-        return this
+        cy.get('form').within(($form) => {
+            const field = cy.get('[name=clientID]')
+            field.clear()
+            field.type(value)
+            return this
+        })
     }
 
     submitDevice() {

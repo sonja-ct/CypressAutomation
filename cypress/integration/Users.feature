@@ -56,8 +56,8 @@ Feature: Users
         When I search for email "user5@mail.com"
         Then Created user with name "user5" should be shown
 
-        Scenario: Create new user and edit display name
-                Given I navigate to Users tab
+    Scenario: Create new user and edit display name
+        Given I navigate to Users tab
         When I click on Add
         And I create new user with username "user6" and password "PasswordPassword123!"
         And I click submit button
@@ -65,8 +65,8 @@ Feature: Users
         When I edit "user6" display name to "USER6"
         And I click submit button
 
-        Scenario: Create new user and grant permission
-         Given I navigate to Users tab
+    Scenario: Create new user and grant permission
+        Given I navigate to Users tab
         When I click on Add
         And I create new user with username "user7" and password "PasswordPassword123!"
         And I click submit button
@@ -74,8 +74,30 @@ Feature: Users
         When I select grant permission to user "user7" for "access_info"
         And I click submit button
         Then Message "Permission association successfully granted." should be shown
-       
+
+    Scenario: Create new user and grant forwardable permission
+        Given I navigate to Users tab
+        When I click on Add
+        And I create new user with username "user8" and password "PasswordPassword123!"
+        And I click submit button
+        Then Message "User successfully created." should be shown
+        When I select grant permission to user "user8" for "access_info"
+        And Make permission forwardable
+        And I click submit button
+        Then Message "Permission association successfully granted." should be shown
+
+  Scenario: Create new user and add admin role
+        Given I navigate to Users tab
+        When I click on Add
+        And I create new user with username "user9" and password "PasswordPassword123!"
+        And I click submit button
+        Then Message "User successfully created." should be shown
+        When I select "admin" role to user "user9" 
+        And I click submit button
+        Then Message "Role successfully assigned." should be shown
 
 
 
-        
+
+
+

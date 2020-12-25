@@ -1,0 +1,263 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 9,
+    "passes": 8,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-12-25T10:21:45.433Z",
+    "end": "2020-12-25T10:23:23.828Z",
+    "duration": 98395,
+    "testsRegistered": 9,
+    "passPercent": 88.88888888888889,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "fbde780f-c343-4889-b003-6e4443bdf302",
+      "title": "",
+      "fullFile": "cypress\\integration\\AccessGroups.feature",
+      "file": "cypress\\integration\\AccessGroups.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "313fc156-eebd-4d46-b62b-212509ba32f0",
+          "title": "Access Groups",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Create Kapua Acess Group with Name And description",
+              "fullTitle": "Access Groups Create Kapua Acess Group with Name And description",
+              "timedOut": null,
+              "duration": 10170,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Access Groups' but never did.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Access Groups' but never did.\n    at AccessGroups.groups (http://localhost:8080/__cypress/tests?p=cypress\\integration\\AccessGroups.feature:126:23)\n    at Context.eval (http://localhost:8080/__cypress/tests?p=cypress\\integration\\AccessGroups.feature:54:9)\n    at Context.resolveAndRunStepDefinition (http://localhost:8080/__cypress/tests?p=cypress\\integration\\AccessGroups.feature:12019:9)\n    at Context.eval (http://localhost:8080/__cypress/tests?p=cypress\\integration\\AccessGroups.feature:11360:35)",
+                "diff": null
+              },
+              "uuid": "f3307cfd-e14c-4ea7-ba81-a16c52bb2188",
+              "parentUUID": "313fc156-eebd-4d46-b62b-212509ba32f0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Create Kapua Acess Group with Name And description and search for it",
+              "fullTitle": "Access Groups Create Kapua Acess Group with Name And description and search for it",
+              "timedOut": null,
+              "duration": 10385,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "6fc9a520-2159-4030-83d2-0cd00a8a5cd2",
+              "parentUUID": "313fc156-eebd-4d46-b62b-212509ba32f0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Create Kapua Acess Group with correct Name And No description",
+              "fullTitle": "Access Groups Create Kapua Acess Group with correct Name And No description",
+              "timedOut": null,
+              "duration": 8771,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "f2b94c17-a3e1-44d0-9585-9f3f334d3225",
+              "parentUUID": "313fc156-eebd-4d46-b62b-212509ba32f0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Create Kapua Acess Group without name And with description",
+              "fullTitle": "Access Groups Create Kapua Acess Group without name And with description",
+              "timedOut": null,
+              "duration": 6899,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "798f8da4-a81f-4f35-a2ac-8628642fa6df",
+              "parentUUID": "313fc156-eebd-4d46-b62b-212509ba32f0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Create Kapua Acess Group with too short Name And No description",
+              "fullTitle": "Access Groups Create Kapua Acess Group with too short Name And No description",
+              "timedOut": null,
+              "duration": 7225,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "dbc8252a-84b3-4604-b087-00054aff1e16",
+              "parentUUID": "313fc156-eebd-4d46-b62b-212509ba32f0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Edit Kapua Access group",
+              "fullTitle": "Access Groups Edit Kapua Access group",
+              "timedOut": null,
+              "duration": 12160,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "720bacbe-4bab-4a7e-81f5-9a05d1b6e507",
+              "parentUUID": "313fc156-eebd-4d46-b62b-212509ba32f0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Create Kapua Acess Group with non-unique Name And description",
+              "fullTitle": "Access Groups Create Kapua Acess Group with non-unique Name And description",
+              "timedOut": null,
+              "duration": 11482,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "a8a85cd7-d463-4810-9790-3f1d35970246",
+              "parentUUID": "313fc156-eebd-4d46-b62b-212509ba32f0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Create Kapua Acess Group with Name And description and delete it",
+              "fullTitle": "Access Groups Create Kapua Acess Group with Name And description and delete it",
+              "timedOut": null,
+              "duration": 10254,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "2ef81778-43fd-49d4-8a24-87c057e51810",
+              "parentUUID": "313fc156-eebd-4d46-b62b-212509ba32f0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Create Kapua Acess Group with Name And description, delete it and create it again",
+              "fullTitle": "Access Groups Create Kapua Acess Group with Name And description, delete it and create it again",
+              "timedOut": null,
+              "duration": 12890,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "a63dc5d9-62df-47c7-9e7b-600f4aff79ed",
+              "parentUUID": "313fc156-eebd-4d46-b62b-212509ba32f0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6fc9a520-2159-4030-83d2-0cd00a8a5cd2",
+            "f2b94c17-a3e1-44d0-9585-9f3f334d3225",
+            "798f8da4-a81f-4f35-a2ac-8628642fa6df",
+            "dbc8252a-84b3-4604-b087-00054aff1e16",
+            "720bacbe-4bab-4a7e-81f5-9a05d1b6e507",
+            "a8a85cd7-d463-4810-9790-3f1d35970246",
+            "2ef81778-43fd-49d4-8a24-87c057e51810",
+            "a63dc5d9-62df-47c7-9e7b-600f4aff79ed"
+          ],
+          "failures": [
+            "f3307cfd-e14c-4ea7-ba81-a16c52bb2188"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 90236,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "mochaFile": "cypress/report/mochawesome-report",
+        "overwrite": false,
+        "html": "true",
+        "json": true,
+        "timestamp": "mmmddyyyy_HHMMss"
+      },
+      "version": "5.1.0"
+    }
+  }
+}

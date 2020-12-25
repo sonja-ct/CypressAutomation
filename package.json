@@ -10,9 +10,12 @@
   "author": "sonja",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^6.1.0",
+    "cypress": "^6.2.0",
     "cypress-cucumber-preprocessor": "^4.0.0",
-    "cypress-xpath": "^1.6.1"
+    "cypress-xpath": "^1.6.1",
+    "mocha": "^8.2.1",
+    "mochawesome": "^6.2.1",
+    "mochawesome-merge": "^4.2.0"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true

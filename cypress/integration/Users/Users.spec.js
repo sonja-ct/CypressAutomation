@@ -2,8 +2,8 @@ import { Before, Given, Then, When } from "cypress-cucumber-preprocessor/steps";
 import LoginPage from "../PageObjects/LoginPage";
 import Users from "../PageObjects/Users";
 
-const page = new LoginPage
-const user = new Users
+const page = new LoginPage()
+const user = new Users()
 
 Before(() => {
     page.visit()
@@ -93,5 +93,18 @@ cy.contains(username).click()
 user.permissions()
 user.grantPermissionButton()
 user.grantPermission(permission)
+})
+
+And ('Make permission forwardable',()=>{
+    user.forwardableCheckBox()
+})
+
+When ('I select {string} role to user {string}',(role,username)=>{
+    cy.contains(username).click()
+    user.rolesButton()
+    user.assignRolesButton()
+    user.assignRoles(role)
+
+
 })
 

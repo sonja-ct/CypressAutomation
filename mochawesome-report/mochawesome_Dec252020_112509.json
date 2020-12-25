@@ -1,0 +1,201 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-12-25T10:24:41.706Z",
+    "end": "2020-12-25T10:25:09.410Z",
+    "duration": 27704,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ddfefa4d-339b-45bc-a0e7-aeb7c8df3740",
+      "title": "",
+      "fullFile": "cypress\\integration\\Login.feature",
+      "file": "cypress\\integration\\Login.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9339b308-92bd-4014-be24-c9aed447dc30",
+          "title": "Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Kapua Login with correct username and password",
+              "fullTitle": "Login Kapua Login with correct username and password",
+              "timedOut": null,
+              "duration": 5230,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "f7f903f2-684c-4bc7-989d-6c4b1cd55621",
+              "parentUUID": "9339b308-92bd-4014-be24-c9aed447dc30",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Kapua Login incorrect username and correct password",
+              "fullTitle": "Login Kapua Login incorrect username and correct password",
+              "timedOut": null,
+              "duration": 4123,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "27ecd0a0-3b10-4466-bc42-34a38d83d953",
+              "parentUUID": "9339b308-92bd-4014-be24-c9aed447dc30",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Kapua Login correct username and incorrect password",
+              "fullTitle": "Login Kapua Login correct username and incorrect password",
+              "timedOut": null,
+              "duration": 4087,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "d393484d-dd7a-488d-acd1-fe312ff5c000",
+              "parentUUID": "9339b308-92bd-4014-be24-c9aed447dc30",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Kapua Login no username and correct password",
+              "fullTitle": "Login Kapua Login no username and correct password",
+              "timedOut": null,
+              "duration": 2906,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "40b104f8-8009-4a4d-85e5-22fb7f2e1a39",
+              "parentUUID": "9339b308-92bd-4014-be24-c9aed447dc30",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Kapua Login with username and no password",
+              "fullTitle": "Login Kapua Login with username and no password",
+              "timedOut": null,
+              "duration": 2548,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "f1b081d5-04b1-4a61-9733-906863e38e17",
+              "parentUUID": "9339b308-92bd-4014-be24-c9aed447dc30",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Reset username and password",
+              "fullTitle": "Login Reset username and password",
+              "timedOut": null,
+              "duration": 3193,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "28d65439-c2c6-40ae-9d4e-b0bf30f7c917",
+              "parentUUID": "9339b308-92bd-4014-be24-c9aed447dc30",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f7f903f2-684c-4bc7-989d-6c4b1cd55621",
+            "27ecd0a0-3b10-4466-bc42-34a38d83d953",
+            "d393484d-dd7a-488d-acd1-fe312ff5c000",
+            "40b104f8-8009-4a4d-85e5-22fb7f2e1a39",
+            "f1b081d5-04b1-4a61-9733-906863e38e17",
+            "28d65439-c2c6-40ae-9d4e-b0bf30f7c917"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 22087,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "mochaFile": "cypress/report/mochawesome-report",
+        "overwrite": false,
+        "html": "true",
+        "json": true,
+        "timestamp": "mmmddyyyy_HHMMss"
+      },
+      "version": "5.1.0"
+    }
+  }
+}
